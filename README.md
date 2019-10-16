@@ -26,3 +26,22 @@ Just to keep a reminder of the extensions I have installed and which are enabled
 | window-list                  | Yes     |
 | windowsNavigator             | No      |
 | workspace-indicator          | No      |
+
+<br/>
+
+## VSCode Extensions
+
+* adamhartford.vscode-base64
+* bibhasdn.unique-lines
+* dbaeumer.vscode-eslint
+* iansan5653.format-python-docstrings
+* mrcrowl.hg
+* ms-python.python
+* ms-vscode.cpptools
+* ms-vscode.vscode-typescript-tslint-plugin
+* NathanRidley.autotrim
+* njpwerner.autodocstring
+* ryu1kn.partial-diff
+* Tyriar.sort-lines
+* wmaurer.change-case
+* yo1dog.cursor-align
