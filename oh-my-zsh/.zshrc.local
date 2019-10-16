@@ -1,0 +1,28 @@
+# NOTE: We will be sourcing again `$ZSH/oh-my-zsh.sh`, so source this file in
+#   `$HOME/.zshrc` instead of `$ZSH/oh-my-zsh.sh`.
+#
+plugins=(zsh-completions git docker)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+#
+autoload -U compinit && compinit
+
+# https://github.com/junegunn/fzf
+#
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
+# https://github.com/changyuheng/zsh-interactive-cd 
+#
+[ -f $HOME/.zsh/addons/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh ] && \
+    source $HOME/.zsh/addons/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+
+[ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
+
+export EDITOR='vim'
+
+which "pkg-config" &> /dev/null && export PKG_CONFIG=$(which "pkg-config")
+
+alias chrome="google-chrome"
+alias ls="ls --group-directories-first --color=tty"
